@@ -1,0 +1,6 @@
+admin = "IAMTHEADMIN!"
+user1 = "this is my password"
+Yuki = "hello?"
+
+# 上面定义了三个用户，用户名(client_id)分别为: admin, user1, Yuki
+# 它们的密码(client_secret)分别为: IAMTHEADMIN!, this is my password, hello?
