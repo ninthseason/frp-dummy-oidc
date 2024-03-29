@@ -16,13 +16,14 @@ frp-dummy-oidc 是一个**无视规范的粗糙的但是可用的**仅适用于 
 
 ### 依赖
 
-> pip install fastapi uvicorn cryptography PyJWT
+> pip install fastapi uvicorn cryptography PyJWT python-multipart
 
 > 我使用的版本:
 > fastapi==0.110.0
 > uvicorn==0.29.0
 > cryptography==39.0.1
 > PyJWT==2.8.0
+> python-multipart==0.0.9
 
 > 比较悲伤的消息, 由于本工具使用了tomllib(官方库, 于 python3.11 引入), 所以要求 python 版本大于 3.11
 
@@ -52,7 +53,7 @@ frp-dummy-oidc 是一个**无视规范的粗糙的但是可用的**仅适用于 
 
 #### 启动服务
 
-> `uvicorn server:app`
+> `uvicorn server:app --host 0.0.0.0 --port <your favorite port>`
 
 #### 配置frp
 
